@@ -1,0 +1,32 @@
+package_name: moscow_model
+pipeline_name: moscow_pipeline
+pipeline_save_file: trained_models/moscow_pipeline.pkl
+
+data_folder: data/
+district_prices: district_prices_monthly.csv
+secondary_market: secondary_market.csv
+metro_stations: metro_stations.csv
+new_builds: new_builds.csv
+rentals: rentals.csv
+
+test_size: 0.2
+random_state: 42
+target: price_rub
+
+features:
+  - developer
+  - complex_class
+  - district
+  - okrug
+  - ready_status
+  - metro_station
+  - metro_line
+  - deal_type
+
+features_to_drop:
+  - price_rub
+  - price_per_sqm
+  - id
+  - date_posted
+  - complex_id
+  - complex_name
