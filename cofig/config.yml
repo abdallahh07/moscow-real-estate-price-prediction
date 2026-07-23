@@ -5,9 +5,9 @@ pipeline_save_file: trained_models/moscow_pipeline.pkl
 data_folder: data/
 district_prices: district_prices_monthly.csv
 secondary_market: secondary_market.csv
-metro_stations: metro_stations.csv
 new_builds: new_builds.csv
 rentals: rentals.csv
+metro_stations: metro_stations.csv
 
 test_size: 0.2
 random_state: 42
